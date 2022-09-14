@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body onload="onNewLoad()">
+<!-- 
+Simulationsprogramm für Stellwerk- und Blocklogik.
+Ersteller: Rolf Gutzwiller
+all rights reserved
+Version: generic_2-2-2_geo_V1: 
+	generic station
+	2 line tracks left, 2 platform tracks, 2 line tracks right
+    geographical circuitry principle
+-->
+<link rel="stylesheet" type="text/css" href="styles/generic_2-2-2_geo_V1_main.css">
+
+<span id="judihui" style="height:10px"><br /></span>
+
+<button type="button" onclick="initialize()">initialize</button>&nbsp;
+<!--<span style="color:yellow; font-weight:bold; font-family:calibri">Under construction, new version maybe within a few weeks (10/06/2022)</span>-->
+<br /><br /><br />
+
+<!--<span id="failure-text"></span>-->
+
+<canvas id="myCanvas" width="1500" height="300" style="border:1px solid #000000;" onclick="onclickCanvas(event)" onmousedown="onMouseDownCanvas(event)" onmouseup="onMouseUpCanvas(event)" onmousemove="onMouseDownMoveCanvas(event)">
+Your browser does not support the canvas element.</canvas>
+<!-- canvas height was "550", with only 2 tracks "300" is enough-->
+<!-- Bildschirm Laptop eduRail: 1920x1080px; Versucht zeigt, dass ViewPort max. 1500x750 sein sollte -->
+
+<a href="docs/Bedienungsanleitung.pdf" target="_new">Bedienungsanleitung</a><br />
+
+<script src="scripts/generic_2-2-2_geo_V1_classes.js"></script>
+<script src="scripts/generic_2-2-2_geo_V1_definitions.js"></script>
+<script src="scripts/generic_2-2-2_geo_V1_functions.js"></script>
+
+</body>
+</html>
