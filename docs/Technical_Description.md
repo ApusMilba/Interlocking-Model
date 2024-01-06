@@ -41,4 +41,19 @@
 16. *preBuildTrainRoute()*
 17. *setPointsForTrainRoute()*
 18. *startBuildingTR()*
-19. *buildTrainRoute()* 
+19. *buildTrainRoute()*
+# F) Setting a Train Route ('ZF')
+1. When a TrainSignal is clicked and it is a possible start signal, with mouse down moving a yellow line is drawn.
+2. When then the mouse is over a possible target signal, the method *findRouteBackwards()* is activated; if ok, the signal changes to yellow.
+3. When then releasing the mouse, the method *preBuildTrainRoute()* is activated; if ok, the route elements are drawn in yellow.
+4. If ok (preBuildTRok = TRUE), the function *setPointsForTrainRoute()* is activated, the switching points begin flashing for the time *tChangeSwitch*.
+5. Afterwards, the function *startBuildingTrainRoute()* is started.
+6. The function *buildTrainRoute()* is started: here also the flank protection and the overlap are defined and set.
+7. By succesive occupying and setting free the route elements, the train route is released.
+# G) Block
+1. The simulation of the blocks is simplified to avoid actions on the neighbour stations.
+2. If a section track (D: Streckengleis) gets occupied, the corresponding block changes to the state "blocked", direction to *Testikon*.
+3. To release the block, a train route has to be set and a train has to enter the station *Testikon*.
+4. Exit train route from *Testikon*: By setting a route, the block changes to the state "preblocked" (D: vorgeblockt).
+5. When the corresponding train get on the section track, the block changes to the state "blocked".
+6. When after this the corresponding section track gets free, the block changes to the state "free" (not as in reality!)
