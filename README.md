@@ -9,4 +9,5 @@ To install the model:
 
 Documents in this repository:
 1. README.md -> this doc
-2. 
+2. Op-Instr.md (in folder *docs*): Operating Instruction
+3. tbd
