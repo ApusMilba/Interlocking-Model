@@ -5,7 +5,7 @@
 4. Occupied elements are shown in red, but not bold.
 5. When a corresponding route is set, elements of the flank protection and overlap elements are shown in light green.
 6. There are only train routes (D: Zugfahrstrassen), no shunting routes (D: Rangierfahrstrassen).
-7. The station *Testikon* works with route logic (D: Fahrstrassenlogik), the lines *113, 115, 213, 215* with block logic (D: Blocklogik).
+7. The station *Testikon* works with route logic (D: Fahrstrassenlogik), the section tracks (D: Streckengleise) *113, 115, 213, 215* with block logic (D: Blocklogik).
 8. The train routes are set and reset according to the geografic principle (D: Spurplanprinzip); there is no locking table.
 9. Flank protection in the mode *banned* (D: Verbotsbewirkter Flankenschutz) with monitoring of the flank protection area (D: Schutzraumüberwachung): Elements of the flank protection area are constantly monitored; an occupation of such an element resets the moving authority and sets the start signal to stop.
 10. The main signals are not automated (D: kein ASB, kein automatischer Signalbetrieb).
