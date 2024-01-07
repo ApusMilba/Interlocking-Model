@@ -62,6 +62,9 @@
 4. Exit train route from *Testikon*: By setting a route, the block changes to the state "preblocked" (D: vorgeblockt).
 5. When the corresponding train get on the section track, the block changes to the state "blocked".
 6. When after this the corresponding section track gets free, the block changes to the state "free" (not as in reality!)
+
+
+-> More informations about the block: see [here](Block.md)
 # I) Specialities
 1. Flank protection, method *ban* (*flProtBan*) uses only one element and works only with tracks.
 2. Condition for release resilent route: 
