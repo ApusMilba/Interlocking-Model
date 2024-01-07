@@ -1,13 +1,13 @@
 # A) General
-1. All track elements are instances of classes: TrainSignal, Track, Point, Block.
+1. All elements are instances of the classes in chapter E.
 2. These instances own static and dynamic properties.
 3. The static properties contain mainly geographic informations (position, neigbours etc.).
-4. The dynamic property *'ok'* (not faulty) is used in all classes of track elements.
+4. The dynamic property *'ok'* (not faulty) is used in the classes of track and point.
 5. Tracks and points own always a property 'free' (not occupied).
 6. Speciality: All instances of tracks and points own the properties 'ZfL' and 'ZfR' (train route is set in left resp. in right direction).
 7. All instances of tracks and points own the properties 'olL', 'olR' and 'flProt': overlap element for right/left direction and element of a flank protection.
-8. The train routes are set with the geographic principle: starting from the target signal backwards, points tied in both positions, until the start signal is found.
-9. With setting the train route, also the overlap and the flank protection elements ars searched and set.
+8. The train routes are set with the geographic principle: starting from the target signal backwards, points tied in both positions, until the start signal is found (Details see here chapter G).
+9. With setting the train route, also the overlap and the flank protection elements are searched and set.
 10. A track element (track or point) belayed with a train route ('ZfR' or 'ZfL') is reset, if it was occupied and then free and if the preceding track element is free and not belayed with a train route.
 # B) Software
 1. Program language: Java Script with canvas
@@ -56,9 +56,19 @@
 7. By succesive occupying and setting free the route elements, the train route is released.
 # H) Block
 1. The simulation of the blocks is simplified to avoid actions on the neighbour stations.
+2. The block doesn't have any input element.
 2. If a section track (D: Streckengleis) gets occupied, the corresponding block changes to the state "blocked", direction to *Testikon*.
 3. To release the block, a train route has to be set and a train has to enter the station *Testikon*.
 4. Exit train route from *Testikon*: By setting a route, the block changes to the state "preblocked" (D: vorgeblockt).
 5. When the corresponding train get on the section track, the block changes to the state "blocked".
 6. When after this the corresponding section track gets free, the block changes to the state "free" (not as in reality!)
 # I) Specialities
+1. Flank protection, method *ban* (*flProtBan*) uses only one element and works only with tracks.
+2. Condition for release resilent route: 
+  - last element before target gets free and
+  - element before is free and without a train route set or with train route set in the other direction
+3. Combining or separating trains (D: vereinigen, trennen) is not possible.
+4. Reversing trains (D: wenden) is possible.
+5. Reversing a train (D: Wendezug): is possible, the first route is released with building the second route.
+6. the block doesnot have any input element
+
