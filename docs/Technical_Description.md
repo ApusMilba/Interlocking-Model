@@ -1,5 +1,5 @@
 # A) General
-1. All elements are instances of the classes in chapter E.
+1. All elements are instances of the classes in chapter [E](#e-classes).
 2. These instances own static and dynamic properties.
 3. The static properties contain mainly geographic informations (position, neigbours etc.).
 4. The dynamic property *'ok'* (not faulty) is used in the classes of track and point.
