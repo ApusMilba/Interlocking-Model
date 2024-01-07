@@ -19,4 +19,5 @@
 16. The points can be set individually by clicking on the point designation; only if point is free, has no route set and is not an element of a flank protection.
 17. Error messages disappear by clicking on *Reset Text*.
 18. The button *Initialize* causes a total reset of the interlocking (**not** like in reality!); all previous states are lost.
+19. Test made on VS Code remote 07.01.2023 20:08
   
