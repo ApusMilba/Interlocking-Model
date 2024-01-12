@@ -11,4 +11,4 @@ Documents in this repository:
 1. README.md -> this doc
 2. Op-Instr.md (in folder *docs*): Operating Instruction
 3. Technical_Description.md (in folder *docs*): Technical Description
-4. tbd
+4. Block.md (in folder *docs*): Description of the Block Functions
