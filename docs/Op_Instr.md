@@ -20,4 +20,5 @@
 17. Error messages disappear by clicking on *Reset Text*.
 18. The button *Initialize* causes a total reset of the interlocking (**not** like in reality!); all previous states are lost.
 19. Test made on VS Code remote 07.01.2023 20:08
+19a New Test from VS Code 12.01.2024 15:06
   
